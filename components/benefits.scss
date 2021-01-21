@@ -1,0 +1,45 @@
+.benefits{
+  display: flex;
+  margin-top: -10px;
+  padding: 0 26%;
+}
+
+.benefits__item{
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &:before{
+    content: url(/section.one/pics/threecircles.png);
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:first-child{
+    padding-left: 0;
+  }
+
+  &:last-child{
+    padding-right: 0;
+
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.benefits__section{
+  position: relative;
+
+  &:before{
+  content: url(/section.one/pics/triangle.png);
+  position: absolute;
+  bottom: 160px;
+  left: 25%;
+  }
+  
+}
+
+ 
